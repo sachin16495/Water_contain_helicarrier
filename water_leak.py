@@ -95,6 +95,26 @@ def WaterStoredInPlatform(platform):
                         new_height = max(min_height, platform[r,c])
                         heapq.heappush(min_height_lookup, (new_height, r, c))
                         visited[r][c] = 1
+                elif r-1<m and c-1<n and  c>=0 and r>=0:
+                    if platform[r-1,c-1]==0:
+                        waters.pop()
+                        continue
+                    else:
+                        water += max(0, min_height - platform[r,c])
+                        waters.append(water)
+                        new_height = max(min_height, platform[r,c])
+                        heapq.heappush(min_height_lookup, (new_height, r, c))
+                        visited[r][c] = 1
+               elif r+1<m and c+1<n and  c>=0 and r>=0:
+                    if platform[r+1,c+1]==0:
+                        waters.pop()
+                        continue
+                    else:
+                        water += max(0, min_height - platform[r,c])
+                        waters.append(water)
+                        new_height = max(min_height, platform[r,c])
+                        heapq.heappush(min_height_lookup, (new_height, r, c))
+                        visited[r][c] = 1
                 
                 
     #print(waters)            
