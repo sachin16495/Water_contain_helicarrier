@@ -117,27 +117,27 @@ def WaterStoredInPlatform(platform):
                         visited[r][c] = 1
                 
                 
-    #print(waters)            
+          
+    print("Storage")
     return waters.pop()
 
 platform1=np.array([[2,2,2],[2,2,2],[2,2,2]])
 print("Water Hold by Platform 1")
-print("Storage")
+
 print(WaterStoredInPlatform(platform1))
 print("Water Hold by Platform 2")
-print("Storage")
+
 platform2=np.array([[2,2,2,2],[2,1,2,1],[2,2,2,1]])
 print(WaterStoredInPlatform(platform2))
 print("Water Hold by Platform 3")
 platform3=np.array([[3,3,3,3,3,3],[3,1,2,3,1,3],[3,1,2,3,1,3],[3,3,3,1,3,3]])
-print("Storage")
+
 print(WaterStoredInPlatform(platform3))
 print("Water Hold by Platform 4")
 platform4=np.array([[3,3,3,3,5,3],[3,0,2,3,1,3],[3,1,2,3,1,3],[3,3,3,1,3,3]])
-print("Storage")
+
 print(WaterStoredInPlatform(platform4))
 print("Water Hold by Platform 5")
 platform5=np.array([[ 5 , 5 , 5 , 5 , 5],[ 9 , 1 , 1 , 1 , 5],[ 5 , 1 , 5 , 1 , 5],[ 5 , 1 , 1 , 1 , 5],[ 5 , 5 , 5 , 5 , 5]])
-print("Storage")
-print(WaterStoredInPlatform(platform5))
 
+print(WaterStoredInPlatform(platform5))
