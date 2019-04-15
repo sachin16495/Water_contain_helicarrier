@@ -138,6 +138,6 @@ platform4=np.array([[3,3,3,3,5,3],[3,0,2,3,1,3],[3,1,2,3,1,3],[3,3,3,1,3,3]])
 
 print(WaterStoredInPlatform(platform4))
 print("Water Hold by Platform 5")
-platform5=np.array([[ 5 , 5 , 5 , 5 , 5],[ 9 , 1 , 1 , 1 , 5],[ 5 , 1 , 5 , 1 , 5],[ 5 , 1 , 1 , 1 , 5],[ 5 , 5 , 5 , 5 , 5]])
+platform5=np.array([[ 5 , 5 , 5 , 5 , 9],[ 9 , 1 , 1 , 1 , 5],[ 5 , 1 , 5 , 1 , 5],[ 5 , 1 , 1 , 1 , 5],[ 5 , 5 , 5 , 5 , 5]])
 
 print(WaterStoredInPlatform(platform5))
